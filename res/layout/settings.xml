@@ -1,0 +1,155 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/NewGraphScroller"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/NewGraphLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/labelSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:padding="10dip"
+            android:text="@string/settings"
+            android:textColor="@color/Charcoal"
+            android:textSize="21.0dip" />
+
+        <RelativeLayout
+            android:id="@+id/MaxValueLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/editMaxValueY"
+                android:layout_width="75dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="10dip"
+                android:ems="10"
+                android:gravity="center_vertical|right"
+                android:inputType="numberDecimal|numberSigned" />
+
+            <EditText
+                android:id="@+id/editMaxValueX"
+                android:layout_width="75dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/editMaxValueY"
+                android:ems="10"
+                android:gravity="center_vertical|right"
+                android:inputType="numberDecimal|numberSigned" >
+
+                <requestFocus android:layout_width="wrap_content" />
+            </EditText>
+
+            <TextView
+                android:id="@+id/MaxValueLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="10dip"
+                android:text="@string/pref_title_max_values"
+                android:textColor="@color/Charcoal"
+                android:textSize="18.0dip" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/MinValueLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/editMinValueY"
+                android:layout_width="75dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="10dip"
+                android:ems="10"
+                android:gravity="center_vertical|right"
+                android:inputType="numberDecimal|numberSigned" />
+
+            <EditText
+                android:id="@+id/editMinValueX"
+                android:layout_width="75dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/editMinValueY"
+                android:ems="10"
+                android:gravity="center_vertical|right"
+                android:inputType="numberDecimal|numberSigned" />
+
+            <TextView
+                android:id="@+id/MinValueLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/editMinValueX"
+                android:layout_alignBottom="@+id/editMinValueX"
+                android:layout_alignParentLeft="true"
+                android:paddingLeft="10dip"
+                android:text="@string/pref_title_min_values"
+                android:textColor="@color/Charcoal"
+                android:textSize="18.0dip" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/labelVerticalInterpolation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dip"
+            android:paddingTop="10dip"
+            android:text="@string/iterations"
+            android:textColor="@color/Charcoal" />
+
+        <SeekBar
+            android:id="@+id/seekVerticalInterpolation"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:max="5"
+            android:progress="1" />
+
+        <TextView
+            android:id="@+id/labelHorizontalInterpolation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dip"
+            android:paddingTop="10dip"
+            android:text="@string/iterations"
+            android:textColor="@color/Charcoal" />
+
+        <SeekBar
+            android:id="@+id/seekHorizontalInterpolation"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:max="5"
+            android:progress="1" />
+
+        <CheckBox
+            android:id="@+id/checkShowAxis"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:checked="true"
+            android:text="@string/pref_title_axis"
+            android:textColor="@color/Charcoal" />
+
+        <CheckBox
+            android:id="@+id/checkShowGridlines"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:checked="true"
+            android:text="@string/pref_title_gridlines"
+            android:textColor="@color/Charcoal" />
+    </LinearLayout>
+
+</ScrollView>

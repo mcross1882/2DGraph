@@ -1,0 +1,24 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory 
+        android:title="@string/pref_graph_title"
+        android:key="pref_key_storage_settings">
+        <CheckBoxPreference
+            android:key="pref_key_show_axis"
+            android:summary="@string/pref_summary_axis"
+            android:title="@string/pref_title_axis"
+            android:defaultValue="true" />
+        <CheckBoxPreference
+            android:key="pref_key_show_gridlines"
+            android:summary="@string/pref_summary_gridlines"
+            android:title="@string/pref_title_gridlines" 
+            android:defaultValue="true" />
+        <mcross.Graph.Widgets.DualValuePreference 
+            android:key="pref_key_max_values"
+            android:summary="@string/pref_summary_max_values"
+            android:title="@string/pref_title_max_values" />
+        <mcross.Graph.Widgets.DualValuePreference 
+            android:key="pref_key_min_values"
+            android:summary="@string/pref_summary_min_values"
+            android:title="@string/pref_title_min_values" />
+    </PreferenceCategory>
+</PreferenceScreen>

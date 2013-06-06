@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/GraphLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/app_bg"
+    android:orientation="vertical" >
+
+    <mcross.Graph.Widgets.GraphView
+        android:id="@+id/GraphView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/ExpressionLayout" />
+
+    <include
+        android:id="@+id/input_board"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dip"
+        layout="@layout/input" />
+
+    <RelativeLayout
+        android:id="@+id/ExpressionLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dip" >
+
+        <EditText
+            android:id="@+id/ExpressionEdit"
+            android:layout_width="200dip"
+            android:layout_height="50dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:ems="10"
+            android:hint="@string/expression_hint"
+            android:inputType="none"
+            android:onClick="onGraphLabelClicked" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/ButtonParse"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/ExpressionEdit"
+            android:onClick="onGraphButtonClicked"
+            android:text="@string/parse" />
+    </RelativeLayout>
+
+</RelativeLayout>

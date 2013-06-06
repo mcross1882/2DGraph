@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, GraphActivity!</string>
+    <string name="app_name">Graph</string>
+    <string name="expression_hint">Expr: \u221Ax</string>
+    <string name="parse">Go</string>
+    <string name="iterations">Iterations (15x)</string>
+    <string name="pref_graph_title">Graph</string>
+    <string name="pref_summary_axis">Show or hide the graph axis</string>
+    <string name="pref_title_axis">Show Axis</string>
+    <string name="pref_summary_gridlines">Show or hide the graph grid lines</string>
+    <string name="pref_title_gridlines">Show Gridlines</string>
+    <string name="pref_summary_max_values">Max x and y values for the graph</string>
+    <string name="pref_title_max_values">Max (x,y) values</string>
+    <string name="pref_summary_min_values">Max x and y values for the graph</string>
+    <string name="pref_title_min_values">Min (x,y) values</string>
+    <string name="settings">Settings</string>
+    <string name="quit">Quit</string>
+    <string name="information">Information</string>
+    <string name="square_root">\u221Ax</string>
+    <string name="squared">x^2</string>
+    <string name="exponent">x^n</string>
+    <string name="sin">sin</string>
+    <string name="cos">cos</string>
+    <string name="tan">tan</string>
+    <string name="divide">/</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="six">6</string>
+    <string name="seven">7</string>
+    <string name="eight">8</string>
+    <string name="nine">9</string>
+    <string name="zero">0</string>
+    <string name="multiply">*</string>
+    <string name="subtract">-</string>
+    <string name="add">+</string>
+    <string name="factorial">!</string>
+    <string name="delete">Del</string>
+    <string name="parenthesis">( )</string>
+    <string name="log">log</string>
+    <string name="var_x">x</string>
+    <string name="var_y">y</string>
+    <string name="var_z">z</string>
+    <string name="period">.</string>
+    <string name="left_parenthesis">(</string>
+    <string name="right_parenthesis">)</string>
+    <string name="variable_type">Variable Type:</string>
+    <string-array name="array_var_types">
+        <item >Constant</item>
+        <item >Series</item>
+        <item >Interval</item>
+    </string-array>
+
+</resources>
